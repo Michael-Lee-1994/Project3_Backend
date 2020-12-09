@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   resources :user_watch_items
   resources :watch_items
   post '/login', to: 'users#login', as: 'login'
+  # post '/items', to: 'watch_items#items', as: 'items'
   resources :users 
 
   #new route for users based on username

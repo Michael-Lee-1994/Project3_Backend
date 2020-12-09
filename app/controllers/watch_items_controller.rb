@@ -3,7 +3,7 @@ class WatchItemsController < ApplicationController
         items = WatchItem.all
         render json: items
     end
-
+    
     def show
         item = WatchItem.find(params[:id])
         render json: item
